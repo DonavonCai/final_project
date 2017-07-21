@@ -1,0 +1,91 @@
+/* ==========================================================================
+Color Scheme
+========================================================================== */
+/*
+light-green: #A9CF54
+dark-green: #588F27
+off-white: #FCFFF5
+gray: #7E827A
+dark-gray: #2A2C2B
+*/
+/* ==========================================================================
+Base styles:
+========================================================================== */
+/* Fix to include padding and border in the total width for each element */
+* {
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0 auto;
+  background: #FCFFF5;
+}
+a {
+  text-decoration: none;
+}
+/* Fix for responsive images */
+img {
+  max-width: 100%;
+}
+/* ==========================================================================
+Typography:
+========================================================================== */
+p {
+  padding-left: 25%;
+  padding-right: 25%;
+}
+/* ==========================================================================
+Header:
+========================================================================== */
+header h1 {
+  margin-top: 0;
+}
+/* ==========================================================================
+Hamburger Menu:
+========================================================================== */
+.hamburger {
+  position: fixed;
+  background: #2A2C2B;
+  width: 20%;
+  z-index: 2;
+  padding-bottom: 100%;
+  display: none;
+}
+hr {
+  border: 1px solid #7E827A;
+}
+.hamburger div {
+  background: #7E827A;
+  width: 30px;
+  height: 5px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+
+}
+.hamburger .icon {
+  position: relative;
+  top: 2px;
+  width: 34px;
+  height: 32px;
+  background: #2A2C2B;
+  margin-right: 1%;
+}
+
+.hamburger p {
+  background: #2A2C2B;
+  color: #B8AE9C;
+  padding-left: 5%;
+  text-align: left;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+.sidebar div {
+  display: inline;
+  margin: 0 auto;
+
+}
+.sidebar div h2 {
+  background: #2A2C2B;
+  color: #B8AE9C;
+}
+/* ==========================================================================
+Keyframes:
+========================================================================== */
