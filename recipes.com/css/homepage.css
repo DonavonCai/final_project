@@ -1,4 +1,7 @@
 /* ==========================================================================
+   Header
+   ========================================================================== */
+/* ==========================================================================
    Homepage-Nav:
    ========================================================================== */
 @import url("../img/recipes.jpg");
@@ -29,13 +32,15 @@ a h2 {
 }
 #recipes {
   background-image: url("../img/recipes.jpg");
+  background-position: center;
 }
 #chefs {
   background-image: url("../img/chefs.jpg");
+  background-position: 50% 60%;
 }
 #signup {
   background-image: url("../img/signup.jpg");
-  background-position: -180px 0px;
+  background-position: 25% 50%;
 }
 div p {
 
@@ -63,4 +68,21 @@ div p {
 img {
   max-width: 100%;
   repeat: no-repeat;
+}
+@media screen and (max-width: 790px) {
+  h1 {
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+  .homepage {
+    flex-direction: column;
+  }
+  .nav-item {
+
+  }
+  .pics {
+    width: 80%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
 }
