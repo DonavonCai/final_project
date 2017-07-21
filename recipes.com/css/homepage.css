@@ -2,37 +2,47 @@
    Homepage-Nav:
    ========================================================================== */
 @import url("../img/recipes.jpg");
+@import url("../img/chefs.jpg");
 .homepage {
   display: flex;
   justify-content: space-around;
   width: 99%;
+  padding-bottom: 1%;
 }
-.homepage h2 {
-  width: 31.33%;
+h2 {
   background: #A9CF54;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-h2 a {
+.pics {
+  width: 31.33%;
+}
+a h2 {
   color: #2A2C2B;
 }
-.pics {
-  display: flex;
-  width: 99%;
-}
 .nav-item {
-  width: 31.33%;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  background-image: url("../img/recipes.jpg");
-  padding-top: 44.85%;
+  padding-top: 126.25%;
   justify-content: space-around;
+  background-position: center top;
+}
+#recipes {
+  background-image: url("../img/recipes.jpg");
+}
+#chefs {
+  background-image: url("../img/chefs.jpg");
+}
+#signup {
+  background-image: url("../img/signup.jpg");
+  background-position: -180px 0px;
 }
 div p {
   background: rgba(0, 0, 0, .5);
   color: #FCFFF5;
   position: relative;
   bottom: 1%;
+  z-index: 1;
 }
 .dropdown {
   font-size: 24px;
