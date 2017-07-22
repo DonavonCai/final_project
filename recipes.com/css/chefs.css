@@ -8,3 +8,39 @@ header h1 {
 /* ==========================================================================
 Grid:
 ========================================================================== */
+img {
+  max-width: 100%
+  repeat: no-repeat;
+}
+.grid-item {
+  display: flex;
+  width: 66%;
+  align-items: center;
+  margin-bottom: 3%;
+}
+p {
+  margin-bottom: 10px;
+}
+.read-more {
+  display: none;
+}
+button {
+  background: #7E827A;
+  color: #FCFFF5;
+  padding: 10px 20px;
+  border: 2px solid #A69E9D;
+  transition: all .1s linear;
+}
+button:active {
+  color: #A69E9D;
+  background: #2A2C2B;
+}
+/* ==========================================================================
+   Media Queries:
+   ========================================================================== */
+   @media screen and (max-width: 790px) {
+     h1 {
+       padding-left: 25%;
+       padding-right: 25%;
+     }
+   }
