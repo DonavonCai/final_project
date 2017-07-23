@@ -53,34 +53,33 @@ header h1 {
 /* ==========================================================================
 Hamburger Menu:
 ========================================================================== */
+.icon {
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  width: 34px;
+  height: 32px;
+  background: rgba(0, 0, 0, 0);
+  z-index: 2;
+}
 .hamburger {
   position: fixed;
   background: #2A2C2B;
   width: 20%;
-  z-index: 2;
+  z-index: 1;
   padding-bottom: 100%;
   display: none;
 }
 hr {
   border: 1px solid #7E827A;
 }
-.hamburger div {
+.icon div {
   background: #7E827A;
   width: 30px;
   height: 5px;
   margin-top: 4px;
   margin-bottom: 4px;
-
 }
-.hamburger .icon {
-  position: relative;
-  top: 2px;
-  width: 34px;
-  height: 32px;
-  background: #2A2C2B;
-  margin-right: 1%;
-}
-
 .hamburger p {
   background: #2A2C2B;
   color: #B8AE9C;
