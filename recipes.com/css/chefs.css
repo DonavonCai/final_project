@@ -1,18 +1,15 @@
 /* ==========================================================================
 Header:
 ========================================================================== */
+header {
+  background: #A69E9D;
+}
 header h1 {
   color: #FCFFF5;
-  background: #A69E9D;
-  
 }
 /* ==========================================================================
 Grid:
 ========================================================================== */
-img {
-  border: 6px solid #A69E9D;
-  border-radius: 10px;
-}
 .name {
   font-size: 26px;
 }
@@ -40,6 +37,7 @@ button {
   padding: 10px 20px;
   border: 2px solid #A69E9D;
   transition: all .1s linear;
+  margin-bottom: 5px;
 }
 button:active {
   color: #A69E9D;

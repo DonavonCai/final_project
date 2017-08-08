@@ -7,7 +7,7 @@ dark-green: #588F27
 off-white: #FCFFF5
 light-gray: #A69E9D
 -----------------------------------------------------------------------------
-hamburger menu:
+sidebar menu:
 gray: #7E827A
 dark-gray: #2A2C2B
 */
@@ -17,10 +17,15 @@ Base styles:
 /* Fix to include padding and border in the total width for each element */
 * {
   box-sizing: border-box;
-  text-align: center;
   margin: 0 auto;
-  background: #FCFFF5;
   font-family: 'Roboto', sans-serif;
+}
+header {
+  margin-bottom: 15px;;
+}
+body {
+    text-align: center;
+    background: #FCFFF5;
 }
 header h1 {
    font-size: 100px;
@@ -32,6 +37,10 @@ a {
 img {
   max-width: 100%;
 }
+.user-pic {
+  border: 6px solid #A69E9D;
+  border-radius: 10px;
+}
 /* ==========================================================================
 Typography:
 ========================================================================== */
@@ -42,62 +51,83 @@ p {
 /* ==========================================================================
 Header:
 ========================================================================== */
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 header h1 {
   display: block;
   font-size: 60px;
   margin-top: 0;
-  padding-top: 25%;
-  padding-bottom: 25%;
-
 }
 /* ==========================================================================
-Hamburger Menu:
+sidebar Menu:
 ========================================================================== */
 .icon {
   position: fixed;
   top: 5px;
   left: 5px;
-  width: 34px;
-  height: 32px;
+  width: 38px;
+  height: 36px;
   background: rgba(0, 0, 0, 0);
-  z-index: 2;
+  z-index: 1;
+  transition: 0.4s
 }
-.hamburger {
+.sidebar {
   position: fixed;
   background: #2A2C2B;
-  width: 20%;
-  z-index: 1;
+  width: 282px;
+  height: 100vh;
+  z-index: 2;
   padding-bottom: 100%;
-  display: none;
+  transition: all 0.4s;
+  transform: translateX(-100%);
 }
-hr {
-  border: 1px solid #7E827A;
+.sidebar #x {
+  position: absolute;
+  color: #FCFFF5;
+  font-size: 25px;
+  right: 8%;
+  z-index: 3;
+  border: none;
+}
+#profile {
+  padding-top: 12%;
 }
 .icon div {
   background: #7E827A;
-  width: 30px;
-  height: 5px;
-  margin-top: 4px;
-  margin-bottom: 4px;
+  width: 35px;
+  height: 6px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
-.hamburger p {
+.sidebar a {
   background: #2A2C2B;
   color: #B8AE9C;
   padding-left: 5%;
   text-align: left;
-  padding-top: 3%;
-  padding-bottom: 3%;
+  padding-top: 4%;
+  padding-bottom: 4%;
   margin-bottom: 0;
+  border-bottom: 2px solid #7E827A;
 }
 .sidebar div {
-  display: inline;
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
-
+}
+.link {
+  width: 100%;
 }
 .sidebar div h2 {
   background: #2A2C2B;
   color: #B8AE9C;
 }
 /* ==========================================================================
-Keyframes:
+Active Classes:
 ========================================================================== */
+.active {
+  transform: translateX(0%);
+}

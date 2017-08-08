@@ -20,23 +20,20 @@
   <!-- Add your site content here. Keep it pretty and use indentation :) -->
   <!-- Sidebar -->
   <div class="icon">
-    <div></div>
-    <div></div>
-    <div></div>
+    <div class='bar-1'></div>
+    <div class='bar-2'></div>
+    <div class='bar-3'></div>
   </div>
-  <div class="hamburger">
+  <div>
     <nav class="sidebar">
+      <a id="x">x</a>
       <div>
-        <p>Profile</p>
+        <a id="profile" class="link">Profile</a>
+        <a class="link">My Recipes</a>
+        <a class="link">Favorites</a>
+        <a class="link">Contact Us</a>
       </div>
-      <hr>
-      <p>My Recipes</p>
-      <hr>
-      <p>Favorites</p>
-      <hr>
-      <p>Contace Us</p>
-      <hr>
-    <nav>
+      <nav>
       </div>
       <!-- End of Sidebar -->
       <header>
@@ -47,32 +44,36 @@
           <a href="recipes.html">
             <h2>Recipes</h2>
             <div id="recipes" class="nav-item">
-
-              <p class="dropdown">^</p>
-              <p class="photo-credit">Photo by Brooke Lark on Unsplash</p>
+              <div class="credit">
+                <a class="dropdown" id="recipes-a">^</a>
+                  <p class="photo-credit" id="recipes-credit">Photo by Brooke Lark on Unsplash</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="pics">
+            <a href="chefs.html"><h2>Chefs</h2>
+              <div id="chefs" class="nav-item">
+                <div class="credit">
+                  <a class="dropdown" id="chefs-a">^</a>
+                    <p class="photo-credit" id="chefs-credit">Photo by Toa Heftiba on Unsplash</p>
+                  </div>
+                </div>
+              </a>
             </div>
-          </a>
-        </div>
-        <div class="pics">
-          <a href="chefs.html"><h2>Chefs</h2>
-            <div id="chefs" class="nav-item">
-
-              <p class="dropdown">^</p>
-              <p class="photo-credit">Photo by Toa Heftiba on Unsplash</p>
-            </div>
-          </a>
-        </div>
-        <div class="pics">
-          <a href="signup.html"><h2>Join the Community!</h2>
-            <div id="signup" class="nav-item">
-
-              <p class="dropdown">^</p>
-              <p class="photo-credit">Photo by Russ Ward on Unsplash</p>
-            </div>
-          </a>
-        </div>
-      </nav>
-      <script src="js/vendor/jquery-1.12.0.min.js"></script>
-      <script src="js/main.js"></script>
-    </body>
-    </html>
+            <div class="pics">
+              <a href="signup.html"><h2>Join the Community!</h2>
+                <div id="signup" class="nav-item">
+                  <div class="credit">
+                    <a class="dropdown" id="signup-a">^</a>
+                      <p class="photo-credit" id="signup-credit">Photo by Russ Ward on Unsplash</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </nav>
+            <script src="js/vendor/jquery-1.12.0.min.js"></script>
+            <script src="js/main.js"></script>
+            <script src="js/homepage.js"></script>
+          </body>
+          </html>

@@ -1,9 +1,11 @@
 /* ==========================================================================
    Header
    ========================================================================== */
+   header {
+     background: #A9CF54;
+   }
    header h1 {
      color: #FCFFF5;
-     background: #A9CF54;
    }
 /* ==========================================================================
    Homepage-Nav:
@@ -33,9 +35,10 @@ a h2 {
 .nav-item {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  padding-top: 126.25%;
+  height: 700px;
   justify-content: space-around;
   background-position: center top;
+  position: relative;
 }
 #recipes {
   background-image: url("../img/recipes.jpg");
@@ -50,27 +53,31 @@ a h2 {
   background-position: 25% 50%;
 }
 div p {
-
   color: #FCFFF5;
   position: relative;
   bottom: 1%;
   z-index: 1;
 }
-.dropdown {
-  font-size: 24px;
+.credit {
+  font-size: 19px;
   font-weight: 400;
   background: rgba(0, 0, 0, .5);
-  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, .75), rgba(0, 0, 0, .5));
-  background: -moz-linear-gradient(bottom, rgba(0, 0, 0, .75), rgba(0, 0, 0, .5));
-  background: -o-linear-gradient(bottom, rgba(0, 0, 0, .75), rgba(0, 0, 0, .5));
-}
-.photo-credit {
+  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, .5));
+  background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, .5));
+  background: -o-linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, .5));
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  background: rgba(0, 0, 0, .5);
-  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, .75));
-  background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, .75));
-  background: -o-linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, .75));
+  padding-top: 5px;
+  transition: 0.4s linear;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+}
+.dropdown {
+  color: white;
+  font-size: 24px;
+  letter-spacing: 2px;
 }
 img {
   max-width: 100%;
