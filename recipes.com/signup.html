@@ -12,7 +12,7 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-
+  <link rel="stylesheet" href="css/signup.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
 </head>
@@ -27,22 +27,33 @@
     <nav class="sidebar">
       <a id="x">x</a>
       <div>
-      <a id="profile" class="link">Profile</a>
-      <a class="link">My Recipes</a>
-      <a class="link">Favorites</a>
-      <a class="link">Contact Us</a>
-    </div>
-    <nav>
+        <a id="profile" class="link">Profile</a>
+        <a class="link">My Recipes</a>
+        <a class="link">Favorites</a>
+        <a class="link">Contact Us</a>
+      </div>
+      <nav>
       </div>
       <!-- End of Sidebar -->
-      <h1>Signup</h1>
-      <input type="text" value="Name">
-      <input type="date" value="Birthdate">
-      <br>
-      <input type="email" value="Email">
-      <br>
-      <input type="text" value="Tell us about yourself.">
+      <h1>About You</h1>
+      <form method="post">
+        <label for="username">Your Name</label>
+        <br>
+        <input type="text" id="username" placeholder="Name" name="name">
+        <br>
+        <label for="birthday">Date of Birth</label>
+        <br>
+        <input type="text" id="birthday" placeholder="mm/dd/yyyy" name="birth-date">
+        <br>
+        <label for="user-email">Your Email</label>
+        <br>
+        <input type="email" id="user-email" placeholder="Email" name="email">
+        <br>
+        <label for="about">Anything Else?</label>
+        <br>
+        <textarea id="about" placeholder="Tell us about yourself."></textarea>
+      </form>
       <script src="js/vendor/jquery-1.12.0.min.js"></script>
-      <script src="js/main.js"></script>
+      <script src="js/scripts.js"></script>
     </body>
     </html>
