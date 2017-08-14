@@ -8,7 +8,7 @@ $('.icon').click(function() {
 });
 $('#x').click(function() {
   $('.sidebar').removeClass('active');
-})
+});
 // ============================================================================
 // Photo Credits for Homepage =================================================
   // When the ^ is clicked on
@@ -35,4 +35,12 @@ $('#signup-a').on('click', function () {
 // Menu for Recipes page ======================================================
   // When the checkboxes for breakfast, lunch/dinner, or dessert is clicked
     // All dishes without the corresponding class will disappear
+// ============================================================================
+// Modal window for signup page ===============================================
+  // When the submit button is clicked
+    // Modal window appears
+    // Rest of page darkens
+$('button:submit').on('click', function() {
+  $('body').toggleClass('darken');
+});
 // ============================================================================

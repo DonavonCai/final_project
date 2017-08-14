@@ -1,6 +1,10 @@
 /* ==========================================================================
 Form:
 ============================================================================= */
+h1 {
+  padding-top: 21px;
+  margin-top: 0;
+}
 input, textarea {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -26,4 +30,11 @@ button:hover {
   color: white;
   background: #588F27;
   border: 3px solid #7E827A;
+}
+body {
+  z-index: 1;
+  transition: all 0.4s linear;
+}
+.darken {
+  background: rgba(0, 0, 0, 0.5);
 }
