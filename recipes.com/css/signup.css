@@ -1,7 +1,29 @@
 /* ==========================================================================
 Form:
 ============================================================================= */
-input {
+input, textarea {
   margin-top: 10px;
   margin-bottom: 10px;
+  width: 100%;
+}
+form {
+  width: 66%;
+}
+textarea {
+  height: 50vh;
+}
+button {
+  width: 50%;
+  height: 60px;
+  letter-spacing: 2px;
+  font-size: 26px;
+  color: white;
+  background: #A9CF54;
+  border: 3px solid #A69E9D;
+  transition: all 0.15s linear;
+}
+button:hover {
+  color: white;
+  background: #588F27;
+  border: 3px solid #7E827A;
 }
