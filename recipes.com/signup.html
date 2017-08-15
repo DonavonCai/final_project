@@ -18,43 +18,119 @@
 </head>
 <body>
   <!-- Sidebar -->
-  <div class="icon">
-    <div class='bar-1'></div>
-    <div class='bar-2'></div>
-    <div class='bar-3'></div>
-  </div>
-  <div>
-    <nav class="sidebar">
-      <a id="x">x</a>
-      <div>
-        <a id="profile" class="link">Profile</a>
-        <a class="link">My Recipes</a>
-        <a class="link">Favorites</a>
-        <a class="link">Contact Us</a>
+  <div class='cover'>
+    <div class="icon">
+      <div class='bar-1'></div>
+      <div class='bar-2'></div>
+      <div class='bar-3'></div>
+    </div>
+    <div>
+      <nav class="sidebar">
+        <a id="x">x</a>
+        <div>
+          <a id="profile" class="link">Profile</a>
+          <a class="link">My Recipes</a>
+          <a class="link">Favorites</a>
+          <a class="link">Contact Us</a>
+        </div>
+        <nav>
+        </div>
+        <!-- End of Sidebar -->
+        <h1>About You</h1>
+        <form method="post">
+          <div id="name">
+            <div class="name">
+              <label for="firstname">First Name</label>
+              <input type="text" id="firstname" placeholder="First Name" name="first-name">
+            </div>
+            <div class="name">
+              <label for "lastname">Last Name</label>
+              <input type="text" id="lastname" placeholder="Last Name" name="last-name">
+            </div>
+          </div>
+          <br>
+          <label for="month">Date of Birth</label>
+          <div id="birthday">
+            <div class="birthday">
+              <label for="month">Month</label>
+              <p class = "alert" id="month-alert"></p>
+              <select name="month" id="month">
+                <option value="">Select a month.</option>
+                <option value="1">January</option>
+                <option value="2">February</option>
+                <option value="3">March</option>
+                <option value="4">April</option>
+                <option value="5">May</option>
+                <option value="6">June</option>
+                <option value="7">July</option>
+                <option value="8">August</option>
+                <option value="9">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+              </select>
+            </div>
+            <div class="birthday">
+              <label for="year">Year</label>
+              <p class="alert" id="year-alert"></p>
+              <input type = "number" name="year" id="year" placeholder="Year">
+            </div>
+            <div class="birthday">
+              <label for="day">Day</label>
+              <p class="alert" id="day-alert"></p>
+              <select name="day" id="day">
+                <option value="">Select a day.</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+              </select>
+            </div>
+          </div>
+          <br>
+          <label for="user-email">Your Email</label>
+          <input type="email" id="user-email" placeholder="Email" name="email">
+          <label for="user-email-confirm">Confirm Email</label>
+          <input type="email" id="user-email-confirm" placeholder="Confirm Email" name="confirm email">
+          <label for="password-enter">Enter Password</label>
+          <input type="password" id="password-enter" placeholder="Enter Password">
+          <label for="password-confirm">Confirm Password</label>
+          <input type="password" id="password-confirm" placeholder="Confirm Password">
+          <label for="about">Anything Else?</label>
+          <br>
+          <textarea id="about" placeholder="Tell us about yourself (optional)."></textarea>
+          <br>
+          <button type="submit">Submit</button>
+        </form>
+        <script src="js/vendor/jquery-1.12.0.min.js"></script>
+        <script src="js/scripts.js"></script>
       </div>
-      <nav>
-      </div>
-      <!-- End of Sidebar -->
-      <h1>About You</h1>
-      <form method="post">
-        <label for="username">Your Name</label>
-        <br>
-        <input type="text" id="username" placeholder="Name" name="name">
-        <br>
-        <label for="birthday">Date of Birth</label>
-        <br>
-        <input type="text" id="birthday" placeholder="mm/dd/yyyy" name="birth-date">
-        <br>
-        <label for="user-email">Your Email</label>
-        <br>
-        <input type="email" id="user-email" placeholder="Email" name="email">
-        <br>
-        <label for="about">Anything Else?</label>
-        <br>
-        <textarea id="about" placeholder="Tell us about yourself."></textarea>
-      </form>
-      <button type="submit">Submit</button>
-      <script src="js/vendor/jquery-1.12.0.min.js"></script>
-      <script src="js/scripts.js"></script>
     </body>
     </html>

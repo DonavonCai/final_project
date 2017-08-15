@@ -40,7 +40,35 @@ $('#signup-a').on('click', function () {
   // When the submit button is clicked
     // Modal window appears
     // Rest of page darkens
-$('button:submit').on('click', function() {
-  $('body').toggleClass('darken');
+$('form').on('submit', function(event) {
+  event.preventDefault();
+  $('.cover').toggleClass('dark');
+});
+// ============================================================================
+// Logic for form submission ==================================================
+$('#day').on('click', function() {
+  var month=$('#month').val();
+  var year=$('#year').val();
+  if (month == "") {
+    $('#month-alert').text('Please select a month.');
+  }
+  if (year == "") {
+    $('#year-alert').text('Please select a year.');
+  }
+  if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12) {
+    $("#day option[value='31']").show();
+    $("#day option[value='30']").show();
+    $("#day option[value='29']").show();
+  } else if (month == 4 || month == 6 || month == 9 || month == 11) {
+    $("#day option[value='31']").remove();
+  } else if (month ==2 && year%4 != 0) {
+    $("#day option[value='31']").hide();
+    $("#day option[value='30']").hide();
+    $("#day option[value='29']").hide();
+  } else if (year%4 == 0) {
+    $("#day option[value='31']").hide();
+    $("#day option[value='30']").hide();
+    $("#day option[value='29']").show();
+  }
 });
 // ============================================================================
