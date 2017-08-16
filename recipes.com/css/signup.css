@@ -64,3 +64,84 @@ Alerts:
 .alert {
   color: red;
 }
+/* ==========================================================================
+Modal Window:
+============================================================================= */
+.modal-window {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 60vh;
+  top: 15vh;
+  left: 18%;
+  z-index: 3;
+  border: 5px solid #588F27;
+  background: #A9CF54;
+  color: white;
+  letter-spacing: 2px;
+  width: 66%;
+  border-radius: 10px;
+}
+.modal-content {
+  width: 70%;
+}
+.modal-window h2 {
+  font-size: 30px;
+}
+.modal-window p {
+  margin: 15px 0;
+}
+#confirmation-code {
+  width: 50%;
+  padding: 20px 10px;
+  color: black;
+  font-size: 20px;
+}
+.modal-button {
+  width: 50%;
+  background: turquoise;
+}
+.modal-button:hover {
+  background: #175167;
+  border: 2px solid black;
+}
+.modal-x {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 25px;
+}
+.modal-x div {
+  background: white;
+  height: 3px;
+}
+.bar1 {
+  transform: rotate(45deg);
+}
+.bar2 {
+  transform: rotate(-45deg) translateY(-2px) translateX(1px);
+}
+/* ==========================================================================
+Media Queries:
+============================================================================= */
+@media screen and (max-width: ) {
+
+}
+@media screen and (max-height: 400px) {
+  #modal-window {
+    height: 80vh;
+  }
+}
+@media screen and (max-height: 300px) {
+  #modal-window  h2 {
+    font-size: 20px;
+  }
+  #modal-window p {
+    font-size: 14px;
+  }
+  #confirmation-code {
+    padding: 10px 5px;
+    font-size: 18px;
+  }
+}
