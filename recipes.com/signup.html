@@ -18,7 +18,6 @@
 </head>
 <body>
   <!-- Sidebar -->
-  <div class='cover'>
     <div class="icon">
       <div class='bar-1'></div>
       <div class='bar-2'></div>
@@ -115,13 +114,19 @@
             </div>
           </div>
           <br>
+          <p class="alert" id="email-match-alert"></p>
           <label for="user-email">Your Email</label>
+          <p class="alert" id="email-alert"></p>
           <input type="email" id="user-email" placeholder="Email" name="email">
           <label for="user-email-confirm">Confirm Email</label>
+          <p class="alert" id="email-confirm-alert"></p>
           <input type="email" id="user-email-confirm" placeholder="Confirm Email" name="confirm email">
+          <p class="alert" id="password-match-alert"></p>
           <label for="password-enter">Enter Password</label>
+          <p class="alert" id="password-alert"></p>
           <input type="password" id="password-enter" placeholder="Enter Password">
           <label for="password-confirm">Confirm Password</label>
+          <p class="alert" id="password-confirm-alert"></p>
           <input type="password" id="password-confirm" placeholder="Confirm Password">
           <label for="about">Anything Else?</label>
           <br>
@@ -131,6 +136,5 @@
         </form>
         <script src="js/vendor/jquery-1.12.0.min.js"></script>
         <script src="js/scripts.js"></script>
-      </div>
     </body>
     </html>

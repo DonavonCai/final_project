@@ -37,6 +37,7 @@ select {
 }
 form {
   width: 66%;
+  margin-bottom: 30px;
 }
 textarea {
   height: 50vh;
@@ -56,14 +57,6 @@ button:hover {
   color: white;
   background: #588F27;
   border: 3px solid #7E827A;
-}
-.cover {
-  z-index: 1;
-  transition: all 0.4s linear;
-  margin-bottom: 30px;
-}
-.dark {
-  background: rgba(0, 0, 0, 0.5);
 }
 /* ==========================================================================
 Alerts:
