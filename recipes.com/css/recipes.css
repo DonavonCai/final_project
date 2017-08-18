@@ -1,0 +1,36 @@
+.item {
+  display: flex;
+  flex-direction: row;
+  width: 66%;
+  margin-bottom: 40px;
+  align-items: center;
+}
+h1 {
+  font-size: 40px;
+  margin: 50 px 0;
+}
+h2 {
+  text-transform: capitalize;
+  color: #588F27;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+.item div {
+  width: 500px;
+}
+img {
+  border: 6px solid #A9CF54;
+  border-radius: 10px;
+}
+.item p {
+  padding-left: 0;
+  padding-right: 0;
+  width: 66%;
+  display: none;
+}
+/* ==========================================================================
+Active states:
+========================================================================== */
+.active-item {
+  transform: translateX(-78.40%);
+}
