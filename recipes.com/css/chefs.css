@@ -14,7 +14,7 @@ Grid:
   font-size: 26px;
 }
 .grid-item div {
-  width: 100%;
+  width: 25%;
 }
 .grid-item {
   display: flex;
@@ -25,10 +25,17 @@ Grid:
   border-bottom-left-radius: -10px;
   border-bottom-right-radius: 20px;
 }
+article {
+  width: 66%;
+}
+img {
+  border: 6px solid #A69E9D;
+  border-radius: 10px;
+}
 p {
   margin-bottom: 10px;
 }
-.read-more {
+.hidden {
   display: none;
 }
 button {
@@ -39,7 +46,7 @@ button {
   transition: all .1s linear;
   margin-bottom: 5px;
 }
-button:active {
+button:hover {
   color: #A69E9D;
   background: #2A2C2B;
 }

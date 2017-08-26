@@ -5,9 +5,44 @@
   margin-bottom: 40px;
   align-items: center;
 }
+a {
+  color: #A9CF54;
+}
 h1 {
   font-size: 40px;
-  margin: 50 px 0;
+  padding: 50px 0;
+}
+.page-nav {
+  margin-bottom: 20px;
+  width: 43%;
+}
+.page-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.page-nav a {
+  font-size: 24px;
+}
+.page-nav button {
+  width: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  letter-spacing: 2px;
+  font-size: 23px;
+  color: white;
+  background: #A9CF54;
+  border: 3px solid #A69E9D;
+  transition: all 0.15s linear;
+}
+label {
+  font-size: 20px;
+}
+
+input {
+  margin: 10px 0;
+  padding: 5px;
 }
 h2 {
   text-transform: capitalize;
@@ -21,6 +56,7 @@ h2 {
 img {
   border: 6px solid #A9CF54;
   border-radius: 10px;
+  width: 462px;
 }
 .item p {
   padding-left: 0;
@@ -33,4 +69,5 @@ Active states:
 ========================================================================== */
 .active-item {
   transform: translateX(-78.40%);
+  pointer-events: none;
 }

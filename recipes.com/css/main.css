@@ -27,6 +27,9 @@ body {
     text-align: center;
     background: #FCFFF5;
 }
+h1 {
+  margin-top: 0;
+}
 header h1 {
    font-size: 100px;
 }
@@ -37,9 +40,29 @@ a {
 img {
   max-width: 100%;
 }
-.user-pic {
-  border: 6px solid #A69E9D;
-  border-radius: 10px;
+/* ==========================================================================
+Side padding:
+========================================================================== */
+html {
+	min-height: 100%;
+	position: relative;
+}
+body {
+	height: 100%;
+}
+.side-padding {
+	position: absolute;
+	width: 10%;
+	background: #588F27;
+	top: 0;
+	bottom: 0;
+	overflow: hidden;
+}
+#left {
+	left: 0;
+}
+#right {
+	right: 0;
 }
 /* ==========================================================================
 Typography:
@@ -94,7 +117,7 @@ sidebar Menu:
   border: none;
 }
 #profile {
-  padding-top: 12%;
+  margin-top: 12%;
 }
 .icon div {
   background: #7E827A;
@@ -102,6 +125,7 @@ sidebar Menu:
   height: 6px;
   margin-top: 5px;
   margin-bottom: 5px;
+  border: 1px solid black;
 }
 .sidebar a {
   background: #2A2C2B;

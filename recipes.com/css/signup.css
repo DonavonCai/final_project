@@ -5,6 +5,9 @@ h1 {
   padding-top: 21px;
   margin-top: 0;
 }
+label {
+	border-bottom: 2px solid black;
+}
 input, textarea{
   margin-top: 10px;
   margin-bottom: 10px;
@@ -68,7 +71,7 @@ Alerts:
 Modal Window:
 ============================================================================= */
 .modal-window {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   position: fixed;
@@ -125,8 +128,13 @@ Modal Window:
 /* ==========================================================================
 Media Queries:
 ============================================================================= */
-@media screen and (max-width: ) {
-
+@media screen and (max-width: 730px) {
+  #birthday {
+	  flex-direction: column;
+  }
+  .birthday {
+	  width: 100%;
+  }
 }
 @media screen and (max-height: 400px) {
   #modal-window {

@@ -22,7 +22,6 @@ h2 {
   background: #A9CF54;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  white-space: nowrap;
 }
 .pics {
   width: 31.33%;
@@ -32,7 +31,6 @@ a h2 {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   letter-spacing: 1px;
   font-size: 29px;
-  text-wrap: none;
 }
 .nav-item {
   border-bottom-left-radius: 10px;
@@ -93,13 +91,16 @@ img {
     padding-left: 25%;
     padding-right: 25%;
   }
+  h2 {
+	white-space: wrap;
+  }
   .homepage {
     flex-direction: column;
   }
   .pics {
     width: 80%;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 60px;
     height: 66vh;
     width: 60%;
   }

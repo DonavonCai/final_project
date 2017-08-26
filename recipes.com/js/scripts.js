@@ -24,14 +24,6 @@ $('#signup-a').on('click', function () {
   $('#signup-credit').slideToggle(300);
 });
 // ============================================================================
-// Menu for Chefs page ========================================================
-// When the next arrow is clicked on
-// The next page of chefs will appear
-// The current page will disappear
-// When the back arrow is clicked on
-// The previous page of chefs will appear
-// The current page will disappear
-// ============================================================================
 // Menu for Recipes page ======================================================
 // When the checkboxes for breakfast, lunch/dinner, or dessert is clicked
 // All dishes without the corresponding class will disappear
@@ -64,6 +56,7 @@ $('body').on('click', function() {
   }
 });
 // Password/ email:
+var sendToEmail = "";
 $('form').on('submit', function () {
   var first_name=$('#firstname').val();
   var last_name=$('#lastname').val();
@@ -117,6 +110,7 @@ $('form').on('submit', function () {
   } else {
     $('#email-confirm-alert').hide();
     $('#email-match-alert').hide();
+    sendToEmail = $('#user-email').val();
   }
   if (email1 != "" && email2 != "" && email1 == email2) {
     email_complete = true;
@@ -145,7 +139,8 @@ if (name_complete == true && date_complete == true && email_complete == true && 
   form_complete = true;
 }
 if (form_complete == true) {
-
+  $('.confirmed-user-email').text(sendToEmail);
+  $('.modal-window').css('display', 'flex');
 }
 });
 // ============================================================================
