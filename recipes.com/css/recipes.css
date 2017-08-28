@@ -14,7 +14,7 @@ h1 {
 }
 .page-nav {
   margin-bottom: 20px;
-  width: 43%;
+  width: 500px;
 }
 .page-nav {
   display: flex;
@@ -26,9 +26,8 @@ h1 {
   font-size: 24px;
 }
 .page-nav button {
-  width: 50px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  width: 45px;
+  padding: 3px 0;
   letter-spacing: 2px;
   font-size: 23px;
   color: white;
@@ -70,4 +69,20 @@ Active states:
 .active-item {
   transform: translateX(-78.40%);
   pointer-events: none;
+}
+/* ==========================================================================
+Media Queries:
+========================================================================== */
+@media screen and (max-width: 660px) {
+  h1 {
+    font-size: 30px;
+  }
+  .page-nav {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 415px) {
+  .page-nav {
+    width: 200px;
+  }
 }

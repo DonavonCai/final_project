@@ -26,11 +26,13 @@ Grid:
   border-bottom-right-radius: 20px;
 }
 article {
-  width: 66%;
+  max-width: 66%;
 }
 img {
   border: 6px solid #A69E9D;
   border-radius: 10px;
+  min-width: 313px;
+  max-width: 313px;
 }
 p {
   margin-bottom: 10px;
@@ -53,9 +55,34 @@ button:hover {
 /* ==========================================================================
    Media Queries:
    ========================================================================== */
-   @media screen and (max-width: 790px) {
-     h1 {
-       padding-left: 25%;
-       padding-right: 25%;
-     }
-   }
+@media screen and (max-width: 1670px) {
+  article {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .grid-item {
+    flex-direction: column;
+  }
+  .grid-item div {
+    width: 100%;
+  }
+  article {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 790px) {
+  h1 {
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .grid-item div {
+    width: 100%;
+  }
+  img {
+    min-width: 0;
+    width: 100%;
+  }
+}

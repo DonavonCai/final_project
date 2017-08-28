@@ -87,13 +87,6 @@ img {
    Media Queries:
    ========================================================================== */
 @media screen and (max-width: 962px) {
-  header h1 {
-    padding-left: 25%;
-    padding-right: 25%;
-  }
-  h2 {
-	white-space: wrap;
-  }
   .homepage {
     flex-direction: column;
   }
@@ -107,5 +100,8 @@ img {
 @media screen and (max-width: 430px) {
   header h1 {
     font-size: 45px;
+  }
+  a h2 {
+    font-size: 25px;
   }
 }
